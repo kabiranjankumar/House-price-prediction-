@@ -1,0 +1,134 @@
+/* General Styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+    color: #333;
+}
+
+
+/* Container Styling */
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #666;
+}
+
+
+/* Form Styling */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+    color: #444;
+}
+
+input[type="number"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f9f9f9;
+}
+
+.radio-group input[type="radio"]:checked+label {
+    background: #0056b3;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+
+/* Button Styling */
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #004299;
+}
+
+
+/* Result Display */
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.result h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}

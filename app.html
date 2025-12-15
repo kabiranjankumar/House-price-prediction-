@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Home Price Prediction</title>
+    <!-- Include jQuery for AJAX calls -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Link to your JavaScript file -->
+    <script src="app.js" defer></script>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="app.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Bangalore Home Price Predictor</h1>
+            <p>Get accurate predictions for home prices based on your inputs.</p>
+        </header>
+        <main>
+            <form class="form">
+                <!-- Input for Area -->
+                <label for="uisqft">Area (square feet)</label>
+                <input type="number" id="uisqft" name="squareft" placeholder="Enter area in sqft" required>
+
+                <!-- Radio buttons for BHK -->
+                <label>BHK</label>
+                <div class="radio-group">
+                    <input type="radio" id="1bhk" name="bhk" value="1">
+                    <label for="1bhk">1</label>
+                    <input type="radio" id="2bhk" name="bhk" value="2">
+                    <label for="2bhk">2</label>
+                    <input type="radio" id="3bhk" name="bhk" value="3">
+                    <label for="3bhk">3</label>
+                    <input type="radio" id="4bhk" name="bhk" value="4">
+                    <label for="4bhk">4</label>
+                    <input type="radio" id="5bhk" name="bhk" value="5">
+                    <label for="5bhk">5</label>
+                </div>
+
+                <!-- Radio buttons for Bathrooms -->
+                <label>BATH</label>
+                <div class="radio-group">
+                    <input type="radio" id="1bath" name="bath" value="1">
+                    <label for="1bath">1</label>
+                    <input type="radio" id="2bath" name="bath" value="2">
+                    <label for="2bath">2</label>
+                    <input type="radio" id="3bath" name="bath" value="3">
+                    <label for="3bath">3</label>
+                </div>
+
+                <!-- Dropdown for Location -->
+                <label for="location">Location</label>
+                <select id="location">
+                    <option value="" disabled selected>Choose a location</option>
+                </select>
+
+                <!-- Button to estimate price -->
+                <button type="button" onclick="onClickedEstimatedPrice()">Estimate Price</button>
+            </form>
+
+            <!-- Display the estimated price -->
+            <div id="EstimatedPrice" class="result">
+                <h2></h2>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Bangalore Home Price Predictor. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
